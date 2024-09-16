@@ -41,34 +41,13 @@
             color: white;
             cursor: pointer;
         }
-
-        .progress-container {
-            width: 100%;
-            background-color: #f3f3f3;
-            border-radius: 25px;
-            box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-            overflow: hidden;
-            position: relative;
-            height: 30px;
-        }
-
-        .progress-bar {
-            height: 100%;
-            background-color: #26c6da;
-            width: 0;
-            transition: width 0.5s ease;
-            text-align: center;
-            line-height: 30px;
-            color: white;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
 
     <div class="form-container">
         <h2 class="text-center">Register Information</h2>
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST" enctype="multipart/form-data" action="https://your-flask-app-url/submit-form">
             <div class="form-group">
                 <input type="text" class="form-control" name="name" placeholder="Your Name" required>
             </div>
