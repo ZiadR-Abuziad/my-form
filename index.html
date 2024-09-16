@@ -68,7 +68,7 @@
 
     <div class="form-container">
         <h2 class="text-center">Register Information</h2>
-        <form method="POST">
+        <form method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <input type="text" class="form-control" name="name" placeholder="Your Name" required>
             </div>
@@ -80,6 +80,9 @@
             </div>
             <div class="form-group">
                 <input type="text" class="form-control" name="company" placeholder="Your Company Name">
+            </div>
+            <div class="form-group">
+                <input type="file" class="form-control-file" name="photo" required>
             </div>
             <div class="form-group">
                 <button type="submit" class="submit-btn btn btn-block">Submit</button>
