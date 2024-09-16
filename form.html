@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right bottom, #e0f7fa, #b2ebf2, #80deea, #4dd0e1, #26c6da);
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            border-radius: 25px;
+            padding: 15px;
+        }
+
+        .submit-btn {
+            border-radius: 25px;
+            padding: 15px;
+            font-size: 18px;
+            background-color: #26c6da;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .progress-container {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 25px;
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            overflow: hidden;
+            position: relative;
+            height: 30px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background-color: #26c6da;
+            width: 0;
+            transition: width 0.5s ease;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2 class="text-center">Register Information</h2>
+        <form method="POST">
+            <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="phone" placeholder="Your Phone Number" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="company" placeholder="Your Company Name">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn btn btn-block">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
